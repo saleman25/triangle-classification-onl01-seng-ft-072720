@@ -20,12 +20,7 @@ def kind
   elsif x! = y && y! = z && z! = x 
   :scale
   else :isosceles 
-
-
-
-:equilateral
-:isosceles
-:scalene
+  end 
 end 
  
 def trirule
@@ -37,9 +32,9 @@ def trirule2
   x.positive? && y.positive? && z.positive?
 end 
   
-#class TriangleError < StandardError  
+class TriangleError < StandardError  
   
-# end  
+end  
   
   
 end 
