@@ -33,7 +33,6 @@ def trirule2
 end 
   
 class TriangleError < StandardError  
-  
 end  
   
   
