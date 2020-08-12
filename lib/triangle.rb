@@ -12,10 +12,10 @@ def kind
   if trirule == true && trirule2 == true 
     puts true
   else 
-    TriangleError 
+   raise TriangleError 
   end 
-end 
 
+  
 
 
 
