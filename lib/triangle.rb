@@ -9,6 +9,16 @@ def initialize(x, y, z )
  end  
   
 def kind
+  if trirule == true && trirule2 == true 
+    puts true
+  else 
+    TriangleError 
+  end 
+end 
+
+
+
+
 :equilateral
 :isosceles
 :scalene
