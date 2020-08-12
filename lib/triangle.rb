@@ -15,7 +15,7 @@ def kind
 end 
  
 def trirule
-  if x + y < z 
+  if x + y > z 
   
 #class TriangleError < StandardError  
   
