@@ -18,7 +18,7 @@ def kind
   if x == y && y == z && z == x 
     :equilateral
   elsif x != y && y != z && z != x 
-  :scale
+  :scalene
   else :isosceles 
   end 
 end 
