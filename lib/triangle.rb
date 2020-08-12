@@ -15,7 +15,11 @@ def kind
    raise TriangleError 
   end 
 
-  
+  if x == y && y == z && z == x 
+    :equilateral
+  elsif x! = y && y! = z && z! = x 
+  :scale
+  else :isosceles 
 
 
 
