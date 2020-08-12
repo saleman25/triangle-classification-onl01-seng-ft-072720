@@ -20,7 +20,9 @@ end
 end 
  
 def trirule2
-  x.positive? && y.positive? && x.positive?
+  x.positive? && y.positive? && z.positive?
+end 
+end 
   
 #class TriangleError < StandardError  
   
