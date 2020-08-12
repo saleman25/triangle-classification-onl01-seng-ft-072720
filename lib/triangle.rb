@@ -9,28 +9,23 @@ def initialize(x, y, z )
  end  
   
 def kind
-  if trirule == true && trirule2 == true 
-    puts true
-  else 
-   raise TriangleError 
-  end 
-
-  if x == y && y == z && x == z 
+  validate_triangle
+    if x == y && y == z
     :equilateral
-  elsif x != y && y != z && z != x 
-  :scalene
-  else :isosceles 
-  end 
-end 
- 
-def trirule
-   x + y > z && x + z > y && y + z > x 
+    elsif x == y || y == z || x == z
+    :isosceles
+    else
+    :scalene
 end
-end 
- 
-def trirule2
-  x.positive? && y.positive? && z.positive?
-end 
+end
+
+  def validate_triangle
+    real_triangle = [(x + y > z), (x + y > b), (b + c > a)]
+    [a, b, c].each do |side|
+      real_triangle << false if side <= 0 
+    raise TriangleError if real_triangle.include?(false)
+    end
+  end
   
 class TriangleError < StandardError  
 end  
