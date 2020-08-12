@@ -13,6 +13,9 @@ def kind
 :isosceles
 :scalene
 end 
+ 
+def trirule
+  if x + y < z 
   
 #class TriangleError < StandardError  
   
